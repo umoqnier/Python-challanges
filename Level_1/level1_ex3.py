@@ -8,3 +8,12 @@ Use __init__ method to construct some parameters
 
 
 """
+
+class StrCool():
+
+    def __init__(self):
+        self.__strg = None
+
+    def getString(self):
+        self.__strg = input("Introduce a string: ")
+        print("Your string is %s" % str(self.__strg))
