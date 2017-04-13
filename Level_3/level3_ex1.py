@@ -21,3 +21,14 @@ https://www.tutorialspoint.com/python/python_reg_expressions.htm
 
 """
 import re
+
+passwords = input("Enter the paswords>> ")
+pass_list = passwords.split(",")
+
+for password in pass_list:
+	obj_match = re.match("((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%]).{6,20})", password)
+	if obj_match.group() == password:
+		print(password)
+		break
+	else:
+		print("Your passwords are so bad, try again D:")
