@@ -16,4 +16,4 @@ class StrCool():
 
     def getString(self):
         self.__strg = input("Introduce a string: ")
-        print("Your string is %s" % str(self.__strg))
+        print("Your string is %s" % self.__strg)
