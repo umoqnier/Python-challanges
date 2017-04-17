@@ -17,3 +17,4 @@ Placing a bomb at (0, 1) or at (0, 3) destroys 2 enemies.
 """
 
 def bomber(field):
+    pass

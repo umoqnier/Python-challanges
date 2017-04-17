@@ -9,5 +9,19 @@ DIGITS 3
 Hint: 
 search isdigit & isalpha
 
-
 """
+
+def main():
+    word = input("Enter your string please: ")
+    word = word.replace(" ", "")  # Quitando espacios blancos para que sea mas rapida la pasada
+    letters, digits = 0, 0
+    for letter in word:
+        if letter.isdigit():
+            digits += 1
+        elif letter.isalpha():
+            letters += 1
+    print("LETTERS", letters)
+    print("DIGITS", digits)
+
+if __name__ == '__main__':
+    main()
